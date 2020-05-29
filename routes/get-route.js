@@ -6,7 +6,6 @@ let db=admin.firestore();
 router.get('/get', async (req, res) => {
   let usr=[]
    const users = await db.collection('user').get()
-   console.log(users.docs)
   if (users.docs.length > 0) {
     for (const user of users.docs) {
      usr.push(user.data())
