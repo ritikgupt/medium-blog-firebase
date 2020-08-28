@@ -23,7 +23,6 @@ admin.initializeApp({
   storageBucket: process.env.BUCKET_URL
 });
 app.locals.bucket = admin.storage().bucket()
- 
 //routes
 
 const uploadRoutes=require('./routes/upload')
@@ -38,7 +37,6 @@ const userupdateRoutes=require('./routes/update-user')
 const userdeleteRoutes=require('./routes/delete-user')
 const usercreateRoutes=require('./routes/create-user')
 const usergetRoutes=require('./routes/get-user')
-
 app.use(uploadRoutes)
 app.use(getRoutes)
 app.use(setRoutes)
