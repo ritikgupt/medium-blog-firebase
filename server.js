@@ -1,7 +1,6 @@
 const express=require('express')
 const port = process.env.PORT || 3000
 const compression=require('compression')
-
 const path=require('path')
 const app = express()
 require('dotenv').config()
